@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
+
+
 class AuthController extends Controller
 {
     /*
@@ -62,4 +64,7 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+    
+    protected $redirectTo = '/';
+    protected $loginPath = '/login';    // 追加
 }
