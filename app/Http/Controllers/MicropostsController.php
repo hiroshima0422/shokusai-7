@@ -45,7 +45,7 @@ class MicropostsController extends Controller
             'content' => $request->content,
         ]);
     
-        return redirect('/');
+        return redirect('/welcome/');
     }
 
     /**

@@ -15,7 +15,41 @@
 //    return view('welcome');
 //});
 
-Route::get('/', 'WelcomeController@index');
+//Route::get('/', 'WelcomeController@index');
+
+Route::get('/', function () {
+    return view('index');
+})->name('index');
+
+Route::get('/kyujin/', function () {
+   return view('kyujin');
+})->name('kyujin');
+
+Route::get('/kyujin_shousai/', function () {
+   return view('kyujin_shousai');
+})->name('kyujin_shousai');
+
+Route::get('/company/', function () {
+   return view('company');
+})->name('company');
+
+Route::get('/profile/', function () {
+   return view('profile');
+})->name('profile');
+
+Route::get('/profile_shousai/', function () {
+   return view('profile_shousai');
+})->name('profile_shousai');
+
+//Route::get('/moushikomi/', function () {
+  // return view('moushikomi');
+//})->name('moushikomi');
+
+Route::get('/welcome/', function () {
+    return view('welcome');
+})->name('welcome');
+
+
 
 // ユーザ登録
 Route::get('signup', 'Auth\AuthController@getRegister')->name('signup.get');

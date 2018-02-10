@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app_2')
 
 @section('content')
     @include('users.users', ['users' => $users])
