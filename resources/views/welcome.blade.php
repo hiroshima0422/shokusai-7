@@ -37,6 +37,7 @@
                     <div class="form-group">
                         {!! Form::textarea('content', old('content'), ['class' => 'form-control', 'rows' => '5']) !!}
                     </div>
+                    
                     {!! Form::submit('相談を投稿する', ['class' => 'btn btn-primary btn-block']) !!}
                 {!! Form::close() !!}
             </aside>
