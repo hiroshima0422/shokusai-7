@@ -35,10 +35,12 @@ class UserMicropostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $micropostId)
     {
         //
-        \Auth::user()->oki_follow($id);
+        //dd(\Auth::user()->id);   //2
+        //dd($micropostId);                 //3
+        \Auth::user()->oki_follow($micropostId);
         return redirect()->back();
     }
 
@@ -48,7 +50,7 @@ class UserMicropostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($micropostId)
     {
         //
     }
@@ -59,7 +61,7 @@ class UserMicropostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($micropostId)
     {
         //
     }
@@ -71,7 +73,7 @@ class UserMicropostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $micropostId)
     {
         //
     }
@@ -82,10 +84,10 @@ class UserMicropostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($micropostId)
     {
         //
-        \Auth::user()->oki_unfollow($id);
+        \Auth::user()->oki_unfollow($micropostId);
         return redirect()->back();
     }
 }

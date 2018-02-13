@@ -27,7 +27,7 @@
           	<div class="boxA-inner">
           		<div class="box1">
           			<div class="site">
-          			<h1><a href="#"><img src="./img/shokuai_rogo.jpg" alt="hrc" width="150" height="75"></a></h1>
+          			<h1><a href="#"><img src="../img/shokuai_rogo.jpg" alt="hrc" width="150" height="75"></a></h1>
           			</div>
           		</div>
                 <div class="box2">
@@ -36,11 +36,10 @@
                         <div id="overlay">
                             <div class="menu" id="menu">
                                 <ul>
-                                    <li><a href="#">トップ</a></li>
+                                    <li>{!! link_to_route('index', 'トップ') !!}</li>
                                     <li>{!! link_to_route('kyujin', '求人') !!}</li>
                                     <li>{!! link_to_route('company', '協力企業') !!}</li>
                                     <li>{!! link_to_route('profile', '専門家ネットワーク') !!}</li>
-                                    
                                     <li>{!! link_to_route('welcome', 'つぶやき相談室') !!}</li>
                                 </ul>
                             </div>

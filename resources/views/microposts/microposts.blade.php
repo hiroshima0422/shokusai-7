@@ -12,11 +12,11 @@
             <div>
                 <p>{!! nl2br(e($micropost->content)) !!}</p>
             </div>
-            <div>
-               
+           <div>
+                @include('user_follow.oki_button', ['user' => $user])
             </div>
         </div>
-        @include('user_follow.oki_follow_button', ['user' => $user])
+        
     </li>
 @endforeach
 </ul>

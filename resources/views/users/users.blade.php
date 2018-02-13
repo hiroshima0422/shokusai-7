@@ -1,5 +1,5 @@
 @if (count($users) > 0)
-<br><br>
+
 
 <ul class="media-list">
 @foreach ($users as $user)

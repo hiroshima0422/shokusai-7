@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/vendor/animate.css">
-    <link rel="stylesheet" href="/css/vendor/magnific-popup.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.css">
+    <link rel="stylesheet" href="../css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
 	  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Marcellus">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="img/favicon_2.png">
@@ -156,12 +156,12 @@
     <footer>
       &copy; 2017 SHOKUAI
     </footer>
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="../js/vendor/jquery-2.2.4.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/vendor/jquery.waypoints.min.js"></script>
-    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendor/mobile-detect.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/vendor/jquery.waypoints.min.js"></script>
+    <script src="../js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="../js/vendor/mobile-detect.min.js"></script>
+    <script src="../js/main.js"></script>
     <script type="text/javascript">
  $(function(){
      $('.menu-trigger').on('click', function() {
